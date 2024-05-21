@@ -7,13 +7,13 @@
 <p align="center">
 "<b>Na</b>ughty <b>bo</b>y Pointfoot" 🤖
 </p>
-
 <p align="center">
-    <a href="https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot" target="__blank"><img alt="GitHub stars" src="https://img.shields.io/github/stars/slidevjs/slidev?style=social"></a>
+    <a href="https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot" target="__blank"><img alt="GitHub stars" src="https://img.shields.io/github/stars/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot?style=social"></a>
 </p>
 <p align="center">
   <a href="http://www.bilibili.com/">视频</a> | <a href="https://github.com/tryingfly/nabo">Nabo</a> | <a href="https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot/blob/nabo_pointfoot_opensourced/README.md">English</a> 
 </p>
+
 
 
 <br>

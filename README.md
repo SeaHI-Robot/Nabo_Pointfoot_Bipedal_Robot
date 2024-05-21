@@ -15,7 +15,6 @@
 <p align="center">
   <a href="http://www.bilibili.com/">Video</a> | <a href="https://github.com/tryingfly/nabo">Nabo</a> | <a href="https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot/blob/nabo_pointfoot_opensourced/README_zh.md">简体中文</a> 
 </p>
-
 <br>
 
 <br>
@@ -76,4 +75,3 @@ If U have any problem, please start an **Issue**, or join QQ group 609601974.
 <p align='center'><img src="./assets.README/SUSTech-en.png" alt="SUSTech"  width="350"/>
 </a>
 </p>
-
