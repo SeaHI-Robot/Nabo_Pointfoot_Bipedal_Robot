@@ -1,0 +1,114 @@
+<!-- ========= ***doc description @ yyp*** ==========
+单腿6 dof
+默认角度单位为360角度
+===================================================== -->
+
+<mujoco model="nabo_pointfoot">
+	<option timestep="0.001" gravity="0 0 -10" />
+	
+	<include file="./assets/common.xml"/>
+	
+	<include file="./assets/world_axes.xml"/>
+
+
+	<default>
+		<!-- 实测这个限制是软的，有点像kp系数在限制驱动 -->
+		<joint damping=".03" frictionloss="0.2" range="-45 45" />
+		<motor ctrlrange="-50 50" ctrllimited="true" />
+	</default>
+
+	<worldbody>
+		
+		<!-- <light mode="targetbodycom" target="rbt" diffuse=".8 .8 .8" specular="0.3 0.3 0.3"
+			pos="0 0 5" dir="0 0 -1" castshadow="false" /> -->
+		<light pos="0 0 3" dir="0 0 -1" directional="true" castshadow="false"/> 
+		<geom name="floor" size="0 0 0.01" type="plane" material="groundplane" />
+		
+
+		<body name="rbt" pos="0 0 0.46" euler="0 0 0">
+
+			<!-- 悬空吊起需注释下面一行 -->
+			<freejoint />
+
+			<geom name="torso" type="box" mass="10" size="0.08 0.15 0.05" rgba="1 0.3 0.3 0.5"
+				contype="0" conaffinity="0" />
+
+			<!-- 右腿 -->
+			<body pos="0 -0.1 -0.1">
+				<body>
+					<!-- 臀部Roll关节 -->
+					<joint name="rightHipRol" axis="1 0 0" />
+					<!-- 臀部 无碰撞 -->
+					<geom name="rightHip" type="cylinder" mass="0.35" size="0.02 0.01 "
+						euler="0 90 0"
+						pos="-0.03 0 0" rgba="1 1 0.4 0.5" contype="0" conaffinity="0" />
+					<body>
+						<!-- 臀部Pitch关节 -->
+						<joint name="rightHipPit" axis="0 1 0" range="-60 20" />
+						<!-- 大腿 无碰撞 -->
+						<geom name="rightThigh" type="capsule" mass="0.1" size="0.02"
+							fromto="0 0 -0.03 0 0 -0.17"
+							rgba="0.5 1 0.5 0.5" contype="0" conaffinity="0" />
+						<body pos="0 0 -0.2">
+							<!-- 膝关节 -->
+							<joint name="rightKnee" axis="0 1 0" range="0 160" />
+							<!-- 小腿 无碰撞 -->
+							<geom name="rightShank" type="capsule" mass="0.1" size="0.015"
+								fromto="0 0 -0.04 0 0 -0.16"
+								rgba="0.5 1 1 0.5" contype="0" conaffinity="0" />
+							<body pos="0 0 -0.2">
+								<!-- 点足球形jio 有碰撞-->
+								<geom name="rightPointFoot" type="cylinder" mass="0.1" size="0.01 0.015" euler="90 0 90" rgba="0.5 0.5 0.5 1" friction="1 1 1"/>
+								<!-- <geom name="rightPointFoot" type="sphere" mass="0.1" size="0.01" rgba="0.5 0.5 0.5 1" friction="1 1 1"/> -->  	<!-- 实测用球形轻质脚的话穿模比较严重 -->
+							</body>
+						</body>
+					</body>
+				</body>
+			</body>
+
+			<!-- 左腿 -->
+			<body pos="0 0.1 -0.1">
+				<body>
+					<!-- 臀部Roll关节 -->
+					<joint name="leftHipRol" axis="1 0 0" />
+					<!-- 臀部 无碰撞 -->
+					<geom name="leftHip" type="cylinder" mass="0.35" size="0.02 0.01 "
+						euler="0 90 0"
+						pos="-0.03 0 0" rgba="1 1 0.4 0.5" contype="0" conaffinity="0" />
+					<body>
+						<!-- 臀部Pitch关节 -->
+						<joint name="leftHipPit" axis="0 1 0" range="-60 20" />
+						<!-- 大腿 无碰撞 -->
+						<geom name="lightThigh" type="capsule" mass="0.1" size="0.02"
+							fromto="0 0 -0.03 0 0 -0.17"
+							rgba="0.5 1 0.5 0.5" contype="0" conaffinity="0" />
+						<body pos="0 0 -0.2">
+							<!-- 膝关节 -->
+							<joint name="leftKnee" axis="0 1 0" range="0 160" />
+							<!-- 小腿 无碰撞 -->
+							<geom name="leftShank" type="capsule" mass="0.1" size="0.015"
+								fromto="0 0 -0.04 0 0 -0.16"
+								rgba="0.5 1 1 0.5" contype="0" conaffinity="0" />
+							<body pos="0 0 -0.2">
+								<!-- 点足球形jio 有碰撞-->
+								<geom name="leftPointFoot" type="cylinder" mass="0.1" size="0.01 0.015" euler="90 0 90" rgba="0.5 0.5 0.5 1" friction="1 1 1"/>
+								<!-- <geom name="leftPointFoot" type="sphere" mass="0.1" size="0.01" rgba="0.5 0.5 0.5 1" friction="1 1 1"/> -->  <!-- 实测用球形轻质脚的话穿模比较严重 -->
+							</body>
+						</body>
+					</body>
+				</body>
+			</body>
+		</body>
+	</worldbody>
+
+	<actuator>
+		<motor name="mt0" joint="rightHipRol" />
+		<motor name="mt1" joint="rightHipPit" />
+		<motor name="mt2" joint="rightKnee" />
+
+		<motor name="mt3" joint="leftHipRol" />
+		<motor name="mt4" joint="leftHipPit" />
+		<motor name="mt5" joint="leftKnee" />
+	</actuator>
+
+</mujoco>

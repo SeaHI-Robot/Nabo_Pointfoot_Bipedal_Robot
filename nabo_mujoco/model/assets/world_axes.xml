@@ -1,0 +1,21 @@
+<mujoco>
+
+    <worldbody>
+        <body name="world_axes" pos="0 0 0">
+            <!-- x轴箭头 -->
+                <geom type="cylinder" pos="0.1 0 0" euler="0 90 0" size="0.003 0.1" rgba="1 0 0 0.2" contype="0" conaffinity="0"/>
+                <!-- <geom type="cylinder" pos="0.1 0 0" euler="0 90 0" size="0.008 0.1" rgba="1 0 0 0.9" contype="0" conaffinity="0"/> -->
+                
+            <!-- y轴箭头 -->
+                <geom type="cylinder" pos="0 0.1 0" euler="90 0 0" size="0.003 0.1" rgba="0 1 0 0.2" contype="0" conaffinity="0"/> 
+                <!-- <geom type="cylinder" pos="0 0.1 0" euler="90 0 0" size="0.008 0.1" rgba="0 1 0 0.9" contype="0" conaffinity="0"/>  -->
+            
+            <!-- z轴箭头 -->
+                <geom type="cylinder" pos="0 0 0.1" euler="0 0 0" size="0.003 0.1" rgba="0 0 1 0.2" contype="0" conaffinity="0"/>
+                <!-- <geom type="cylinder" pos="0 0 0.1" euler="0 0 0" size="0.008 0.1" rgba="0 0 1 0.9" contype="0" conaffinity="0"/> -->
+            </body>
+
+    </worldbody>
+   
+ </mujoco>
+  
