@@ -1,6 +1,17 @@
-/*=========== ***doc description @ yyp*** ===========
-目前manager没启用plan_recover的代码, plan_recover中的内容是让机器人静态时候去用pid follow各个joint的期望位置，以让机器人达到预定的一组关节configuration
-=====================================================*/
+/*
+Nabo Pointfoot, built on top of [nabo](https://github.com/tryingfly/nabo)
+Under MIT License.
+
+<https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot>
+*/
+
+/*
+plan_recover中的内容是让机器人静态时候去用pid follow各个joint的期望位置，
+以让机器人达到预定的一组关节configuration
+
+在000.ini中打开latewalk参数可以在仿真前一秒内由plan_recover接管
+*/
+
 #include "iopack.h"
 #include "plan_recover.h"
 

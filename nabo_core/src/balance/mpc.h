@@ -1,8 +1,10 @@
-/*=========== ***doc description @ yyp*** ===========
-线性mpc，F系
-	Blc::mpcClass &mpc=Blc::mpcClass::instance();
-	Blc::stateStruct stt;
-=====================================================*/
+/*
+Nabo Pointfoot, built on top of [nabo](https://github.com/tryingfly/nabo)
+Under MIT License.
+
+<https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot>
+*/
+
 #pragma once
 #include "eigen.h"
 #include "nabo_config.h"

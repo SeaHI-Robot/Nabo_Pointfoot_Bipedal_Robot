@@ -1,7 +1,10 @@
-/*=========== ***doc description @ yyp*** ===========
-常用曲线
-#include"curve.h"
-=====================================================*/
+/*
+Nabo Pointfoot, built on top of [nabo](https://github.com/tryingfly/nabo)
+Under MIT License.
+
+<https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot>
+*/
+
 #pragma once
 #include "eigen.h"
 

@@ -1,6 +1,14 @@
-/*=========== ***doc description @ yyp*** ===========
-comment: imu.h 在robot.h中include
-=====================================================*/
+/*
+Nabo Pointfoot, built on top of [nabo](https://github.com/tryingfly/nabo)
+Under MIT License.
+
+<https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot>
+*/
+
+/*
+imu.h 在robot.h中include
+*/
+
 #pragma once
 #include "eigen.h"
 

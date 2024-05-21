@@ -1,8 +1,14 @@
-/*=========== ***doc description @ yyp*** ===========
-质心平衡，相当于对mpc的结果进行补偿滤波
-计算均在F系
-	Blc::cbicClass &cbic=Blc::cbicClass::instance();
-=====================================================*/
+/*
+Nabo Pointfoot, built on top of [nabo](https://github.com/tryingfly/nabo)
+Under MIT License.
+
+<https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot>
+*/
+
+/*
+cbic即wbic，这里按照了nabo作者的叫法，没改名
+*/
+
 #pragma once
 #include "eigen.h"
 #include"ini.h"

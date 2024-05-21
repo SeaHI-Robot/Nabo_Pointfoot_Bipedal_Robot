@@ -1,3 +1,14 @@
+/*
+Nabo Pointfoot, built on top of [nabo](https://github.com/tryingfly/nabo)
+Under MIT License.
+
+<https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot>
+*/
+
+/*
+com_data对应wbic中对“加速度”的部分
+*/
+
 #include "com_data.h"
 namespace WBC
 {

@@ -1,7 +1,10 @@
-/*=========== ***doc description @ yyp*** ===========
-常量定义，首字母大写
-#include"nabo_nabo_config.h"
-=====================================================*/
+/*
+Nabo Pointfoot, built on top of [nabo](https://github.com/tryingfly/nabo)
+Under MIT License.
+
+<https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot>
+*/
+
 #include <sstream>
 #include <string>
 #include <chrono>

@@ -1,14 +1,16 @@
-/*=========== ***doc description @ yyp*** ===========
-This is part of Nabo (Naughty Boy, 小炮), an open project for the control of biped robot，
-Copyright (C) 2024 YYP, Shanghai Jiao Tong University, under MIT License.
-Feel free to use in any purpose, and cite Nabo or 小炮 in any style, to contribut to the advancement of the community.
-<https://github.com/tryingfly/nabo>
-<https://www.zhihu.com/column/c_1746480685987373057>
+/*
+Nabo Pointfoot, built on top of [nabo](https://github.com/tryingfly/nabo)
+Under MIT License.
 
+<https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot>
+*/
+
+/*
 运动规划基类
 继承提供统一接口，可方便做管理调度（todo：manager.cpp内实现系统调度）
 继承会导致阅读不便，基类尽量不添加复杂逻辑
-=====================================================*/
+*/
+
 #pragma once
 #include "iopack.h"
 #include "robot.h"

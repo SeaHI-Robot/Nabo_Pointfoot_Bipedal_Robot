@@ -1,11 +1,10 @@
-/*=========== ***doc description @ yyp*** ===========
-This is part of Nabo (Naughty Boy, 小炮), an open project for the control of biped robot，
-Copyright (C) 2024 YYP, Shanghai Jiao Tong University, under MIT License.
-Feel free to use in any purpose, and cite Nabo or 小炮 in any style, to contribut to the advancement of the community.
-<https://github.com/tryingfly/nabo>
-<https://www.zhihu.com/column/c_1746480685987373057>
+/*
+Nabo Pointfoot, built on top of [nabo](https://github.com/tryingfly/nabo)
+Under MIT License.
 
-=====================================================*/
+<https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot>
+*/
+
 #include"ini.h"
 #include<map>
 #include<vector>
@@ -39,13 +38,8 @@ public:
 	void getArray(string key,T *value,int n);
 };
 	iniClass::impClass::impClass(){
-		#ifdef _WIN32
-		f.open("../../000.ini");
-		if(f.is_open()){fout.open("../../zzz.txt", ios::trunc);}
-		#else
 		f.open("../000.ini");
 		if(f.is_open()){fout.open("../zzz.txt", ios::trunc);}
-		#endif
 		if(!f.is_open()){
 			f.open("000.ini");
 			fout.open("zzz.txt", ios::trunc);

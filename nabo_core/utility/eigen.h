@@ -1,13 +1,14 @@
-/*=========== ***doc description @ yyp*** ===========
-This is part of Nabo (Naughty Boy, 小炮), an open project for the control of biped robot，
-Copyright (C) 2024 YYP, Shanghai Jiao Tong University, under MIT License.
-Feel free to use in any purpose, and cite Nabo or 小炮 in any style, to contribut to the advancement of the community.
-<https://github.com/tryingfly/nabo>
-<https://www.zhihu.com/column/c_1746480685987373057>
+/*
+Nabo Pointfoot, built on top of [nabo](https://github.com/tryingfly/nabo)
+Under MIT License.
 
+<https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot>
+*/
+
+/*
 简化Eigen类名，以及常用函数
-// #include"eigen.h"
-=====================================================*/
+*/
+
 #pragma once
 #include<Eigen/Dense>
 #include"algorithms.h"

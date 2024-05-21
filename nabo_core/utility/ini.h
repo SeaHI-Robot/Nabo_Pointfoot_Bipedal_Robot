@@ -1,16 +1,18 @@
-/*=========== ***doc description @ yyp*** ===========
-This is part of Nabo (Naughty Boy, 小炮), an open project for the control of biped robot，
-Copyright (C) 2024 YYP, Shanghai Jiao Tong University, under MIT License.
-Feel free to use in any purpose, and cite Nabo or 小炮 in any style, to contribut to the advancement of the community.
-<https://github.com/tryingfly/nabo>
-<https://www.zhihu.com/column/c_1746480685987373057>
+/*
+Nabo Pointfoot, built on top of [nabo](https://github.com/tryingfly/nabo)
+Under MIT License.
 
+<https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot>
+*/
+
+/*
 读取解析配置文件*.ini
 不要在实时循环使用，可以在进实时循环前先找变量赋值
 不能在全局变量使用
 可以在类构造函数中使用(main之前执行)，但该类不能实例化全局变量
 #include"ini.h"
-=====================================================*/
+*/
+
 #pragma once
 #include<string>
 #include<fstream>

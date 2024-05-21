@@ -5,18 +5,18 @@
 </p>
 
 <p align="center">
-"<b>Na</b>ughty <b>bo</b>y Pointfoot" 🤖
+"<b>Na</b>ughty <b>bo</b>y <b>Pointfoot</b>" 🤖
 </p>
 
 <p align="center">
-    <a href="https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot" target="__blank"><img alt="GitHub stars" src="https://img.shields.io/github/stars/slidevjs/slidev?style=social"></a>
+    <a href="https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot" target="__blank"><img alt="GitHub stars" src="https://img.shields.io/github/stars/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot?style=social"></a>
 </p>
 
 <p align="center">
-  <a href="https://twitter.com/antfu7/status/1389604687502995457">Video</a> | <a href="https://github.com/tryingfly/nabo">Nabo</a> | <a href="https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot/blob/nabo_pointfoot_opensourced/README_zh.md">简体中文</a> 
+  <a href="http://www.bilibili.com/">Video</a> | <a href="https://github.com/tryingfly/nabo">Nabo</a> | <a href="https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot/blob/nabo_pointfoot_opensourced/README_zh.md">简体中文</a> 
 </p>
 
----
+<br>
 
 <br>
 
@@ -36,7 +36,7 @@
 - 💻Pure C++
 - ⚡️Computing Efficient, formulating QP with [eiquadprog](https://github.com/stack-of-tasks/eiquadprog)
 - 🤹Interactive [MuJoCo](https://github.com/google-deepmind/mujoco) GUI
-
+- 📝Rich code comments but most in Chinese, I apologize for those who don't understand Chinese
 
 
 <p align='center'><img src="./assets.README/model_comparison.png" alt="nabo_pointfoot"  width="500"/>

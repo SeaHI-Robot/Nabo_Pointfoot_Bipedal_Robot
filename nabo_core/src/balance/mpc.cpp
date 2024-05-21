@@ -1,6 +1,14 @@
-/*=========== ***doc description @ yyp*** ===========
-腿位置线性预测，忽略pit、rol对惯量影响
-=====================================================*/
+/*
+Nabo Pointfoot, built on top of [nabo](https://github.com/tryingfly/nabo)
+Under MIT License.
+
+<https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot>
+*/
+
+/*
+站立腿单刚体mpc的主要代码
+*/
+
 #include "mpc.h"
 #include "robot.h"
 #include "cpg.h"

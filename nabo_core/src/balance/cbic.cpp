@@ -1,6 +1,14 @@
-/*=========== ***doc description @ yyp*** ===========
-wbic比wbc多出来的impulse，是指前馈fr
-=====================================================*/
+/*
+Nabo Pointfoot, built on top of [nabo](https://github.com/tryingfly/nabo)
+Under MIT License.
+
+<https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot>
+*/
+
+/*
+cbic即wbic，这里按照了nabo作者的叫法，没改名
+wbic的主要代码
+*/
 
 #include "eiquadprog/eiquadprog-fast.hpp"
 #include "cbic.h"
