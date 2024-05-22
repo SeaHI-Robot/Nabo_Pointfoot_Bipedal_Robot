@@ -22,12 +22,13 @@
 
 ## 简介
 
-- **Nabo Pointfoot** 是一个点式双足的仿真框架，使用MuJoCo仿真引擎，代码全部由C++构建 
+- Nabo Pointfoot 是一个点式双足的仿真框架，使用[**MuJoCo**](https://github.com/google-deepmind/mujoco)仿真引擎，代码全部由C++构建 
 
-- **Nabo Pointfoot** 参考 [**nabo**]项目(https://github.com/tryingfly/nabo),  一个 12自由度的双足机器人的控制框架
+- Nabo Pointfoot 参考 [**nabo**](https://github.com/tryingfly/nabo),  一个12自由度的双足机器人的控制框架
 
-- **MPC+WBIC** 组成了平衡控制器，控制器代码和仿真代码隔离，易于维护
-- **Nabo Pointfoot** 行走身高0.45米, 最大行走速度0.95m/s.
+- **MPC+WBIC** 组成了平衡控制器，控制器代码和仿真代码隔离，易于管理
+
+- Nabo Pointfoot 行走身高 0.45米, 最大行走速度 **0.95m/s**.
 
 <br>
 
@@ -55,7 +56,20 @@
 2. `$ git clone https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot.git`, 之后cd到该仓库的路径下.
 3. `$ ./make_and_run` 来编译控制器和仿真的代码工程, 并打开方针UI界面. 
 4. 完成编译 `nabo_core/` 和 `nabo_mujoco/` 目录下的仿真工程后，运行 `$ ./run_sim.sh` 可以只打开仿真界面.
-5.  编辑 `nabo_mujoco/000.ini` 中的内容调整参数.。`nabo_mujoco/zzz.txt` 负责储存仿真过程中的log文件，当启动log选项时。
+5.  编辑 `nabo_mujoco/000.ini` 中的内容调整参数。`nabo_mujoco/zzz.txt` 负责储存仿真过程中的log文件，当启动log选项时。
+
+> 在MuJoCo交互界面中：
+>
+> 按键:
+> - w/s : 改变 x 方向目标速度
+> - a/d : 改变 y 方向目标速度
+> - j/l : 改变 z 方向目标角速度 
+> - x: 所有目标速度设为0
+> - backspace: 重置仿真
+> - space: 暂停
+> - f: 可视化足端接触力
+> - z: 是否启动log
+
 
 <br>
 

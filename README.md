@@ -21,12 +21,13 @@
 
 ## Introduction
 
-- **Nabo Pointfoot** is a pointfoot bipedal robot simulation framework in MuJoCo, constructed fully with C++. 
+- Nabo Pointfoot is a **pointfoot bipedal robot simulation framework** in [MuJoCo](https://github.com/google-deepmind/mujoco), constructed fully with C++. 
 
-- **Nabo Pointfoot** is built on top of [**nabo**](https://github.com/tryingfly/nabo),  which is a bipedal robot framework for a 12DOF robot model.
+- Nabo Pointfoot is built on top of [**nabo**](https://github.com/tryingfly/nabo),  which is a bipedal robot framework for a 12DOF robot model.
 
 - **MPC+WBIC** balence controller. The controller code is isolated from simulation, which is elegant.
-- **Nabo Pointfoot** walks with the height of 0.45m, maximux walking speed 0.95m/s.
+
+- Nabo Pointfoot walks with the height of 0.45m, maximux walking speed **0.95m/s**.
 
 <br>
 
@@ -55,6 +56,18 @@ Size Comparison with <b>LIMX P1</b> & <b>Unitree H1</b> 🤖
 3. `$ ./make_and_run` to make both codes of controller and simulation, then start simulation. 
 4. When both codes in `nabo_core/` and `nabo_mujoco/` are maked，simply `$ ./run_sim.sh` to only start simulation.
 5.  Edit `nabo_mujoco/000.ini` to adjust the parameters. And`nabo_mujoco/zzz.txt` stores the log file during simulation if needed. 
+
+> In the MuJoCo GUI:
+>
+>  Press:
+>  - w/s : change command speed in x
+>  - a/d : change command speed in y
+>  - j/l : change command angular speed in z
+>  - x: clear all speed command
+>  - backspace: reset
+>  - space: pause
+>  - f: toggle visualization of contact force
+>  - z: toggle log flag
 
 <br>
 

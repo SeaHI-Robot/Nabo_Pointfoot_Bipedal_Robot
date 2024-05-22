@@ -1,0 +1,5 @@
+/home/allen-wong/Desktop/opensource_version/nabo_core/build/CMakeFiles/util.dir
+/home/allen-wong/Desktop/opensource_version/nabo_core/build/CMakeFiles/nabo.dir
+/home/allen-wong/Desktop/opensource_version/nabo_core/build/CMakeFiles/main.dir
+/home/allen-wong/Desktop/opensource_version/nabo_core/build/CMakeFiles/edit_cache.dir
+/home/allen-wong/Desktop/opensource_version/nabo_core/build/CMakeFiles/rebuild_cache.dir

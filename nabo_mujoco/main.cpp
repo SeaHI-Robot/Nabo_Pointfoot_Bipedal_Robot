@@ -5,6 +5,18 @@ Under MIT License.
 <https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot>
 */
 
+/*
+Press:
+- w/s : change command speed in x
+- a/d : change command speed in y
+- j/l : change command angular speed in z 
+- x: clear all speed command
+- backspace: reset
+- space: pause
+- f: toggle visualization of contact force
+- z: toggle log flag
+*/
+
 #include <sstream>
 #include <string>
 #include <chrono>
