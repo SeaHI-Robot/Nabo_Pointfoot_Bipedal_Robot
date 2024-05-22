@@ -11,12 +11,14 @@
     <a href="https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot" target="__blank"><img alt="GitHub stars" src="https://img.shields.io/github/stars/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot?style=social"></a>
 </p>
 <p align="center">
-  <a href="https://www.bilibili.com/video/BV1Cx4y1q76N/?spm_id_from=333.999.0.0&vd_source=489a733550a7c846fcce2e3eb3a683cc">视频</a> | <a href="https://github.com/tryingfly/nabo">Nabo</a> | <a href="https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot/blob/nabo_pointfoot_opensourced/README.md">English</a> 
+  <a href="https://www.bilibili.com/video/BV1Cx4y1q76N/?spm_id_from=333.999.0.0&vd_source=489a733550a7c846fcce2e3eb3a683cc">B站视频</a> | <a href="https://github.com/tryingfly/nabo">Nabo</a> | <a href="https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot/blob/nabo_pointfoot_opensourced/README.md">English</a> 
 </p>
 
 
 
 <br>
+
+https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot/assets/84261527/11ce7f6e-0806-42d1-891f-866498119e43
 
 <br>
 
