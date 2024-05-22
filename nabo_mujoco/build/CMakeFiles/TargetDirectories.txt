@@ -1,3 +1,0 @@
-/home/allen-wong/Desktop/opensource_version/nabo_mujoco/build/CMakeFiles/main.dir
-/home/allen-wong/Desktop/opensource_version/nabo_mujoco/build/CMakeFiles/edit_cache.dir
-/home/allen-wong/Desktop/opensource_version/nabo_mujoco/build/CMakeFiles/rebuild_cache.dir

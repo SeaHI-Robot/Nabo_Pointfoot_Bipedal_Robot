@@ -1,2 +1,0 @@
-/usr/bin/ar qc libutil.a CMakeFiles/util.dir/utility/algorithms.cpp.o CMakeFiles/util.dir/utility/ini.cpp.o CMakeFiles/util.dir/utility/iopack.cpp.o
-/usr/bin/ranlib libutil.a
