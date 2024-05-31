@@ -54,8 +54,8 @@ Size Comparison with <b>LIMX P1</b> & <b>Unitree H1</b> 🤖
 <br>
 
 ## Usage
-
-1. The codes are developed on Ubuntu20.04, do not run this project on Windows.
+ 
+1. This project was developed on Ubuntu20.04, g++/gcc version `9.4.0`. 
 2. `$ git clone https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot.git`, then cd to this repo's directory.
 3. `$ ./make_and_run` to make both codes of controller and simulation, then start simulation. 
 4. When both codes in `nabo_core/` and `nabo_mujoco/` are maked，simply `$ ./run_sim.sh` to only start simulation.

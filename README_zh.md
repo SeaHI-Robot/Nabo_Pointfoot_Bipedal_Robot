@@ -54,10 +54,10 @@ https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot/assets/84261527/11ce
 
 ## 使用说明
 
-1. 本项目在Ubuntu20.04上开发完成, 不要在Windows上跑.
-2. `$ git clone https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot.git`, 之后cd到该仓库的路径下.
-3. `$ ./make_and_run` 来编译控制器和仿真的代码工程, 并打开方针UI界面. 
-4. 完成编译 `nabo_core/` 和 `nabo_mujoco/` 目录下的仿真工程后，运行 `$ ./run_sim.sh` 可以只打开仿真界面.
+1. 本项目在Ubuntu20.04上开发完成，g++/gcc 版本是9.4.0。
+2. `$ git clone https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot.git`, 之后cd到该仓库的路径下。
+3. `$ ./make_and_run` 来编译控制器和仿真的代码工程, 并打开方针UI界面。
+4. 完成编译 `nabo_core/` 和 `nabo_mujoco/` 目录下的仿真工程后，运行 `$ ./run_sim.sh` 可以只打开仿真界面。
 5.  编辑 `nabo_mujoco/000.ini` 中的内容调整参数。`nabo_mujoco/zzz.txt` 负责储存仿真过程中的log文件，当启动log选项时。
 
 > 在MuJoCo交互界面中：
