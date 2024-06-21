@@ -57,9 +57,10 @@ Size Comparison with <b>LIMX P1</b> & <b>Unitree H1</b> 🤖
  
 1. This project was developed on Ubuntu20.04, g++/gcc version `9.4.0`. 
 2. `$ git clone https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot.git`, then cd to this repo's directory.
-3. `$ ./make_and_run` to make both codes of controller and simulation, then start simulation. 
-4. When both codes in `nabo_core/` and `nabo_mujoco/` are maked，simply `$ ./run_sim.sh` to only start simulation.
-5.  Edit `nabo_mujoco/000.ini` to adjust the parameters. And`nabo_mujoco/zzz.txt` stores the log file during simulation if needed. 
+3. `$ ./make_and_run` to compile both the controller and the simulation, then start simulation with the compiled controller loaded. 
+4. When both codes in `nabo_core/` and `nabo_mujoco/` are compiled，simply do `$ ./run_sim.sh` to only start the simulation without any compilation.
+5.  Edit `nabo_mujoco/000.ini` to adjust the parameters for tuning. `nabo_mujoco/zzz.txt` stores the log file during simulation when the log flag is turned on. 
+6. Pitch is currently poorly controlled at close to zero speed and will stabilize with a bias. Stable yaw angle control cannot be achieved for the time being.
 
 > In the MuJoCo GUI:
 >
