@@ -56,9 +56,10 @@ https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot/assets/84261527/11ce
 
 1. 本项目在Ubuntu20.04上开发完成，g++/gcc 版本是9.4.0。
 2. `$ git clone https://github.com/SeaHI-Robot/Nabo_Pointfoot_Bipedal_Robot.git`, 之后cd到该仓库的路径下。
-3. `$ ./make_and_run` 来编译控制器和仿真的代码工程, 并打开方针UI界面。
-4. 完成编译 `nabo_core/` 和 `nabo_mujoco/` 目录下的仿真工程后，运行 `$ ./run_sim.sh` 可以只打开仿真界面。
-5.  编辑 `nabo_mujoco/000.ini` 中的内容调整参数。`nabo_mujoco/zzz.txt` 负责储存仿真过程中的log文件，当启动log选项时。
+3. `$ ./make_and_run` 来编译控制器和仿真的代码工程, 并加载控制器到MuJoCo中开始仿真。
+4. 编译 `nabo_core/` 和 `nabo_mujoco/` 目录下的工程后，运行 `$ ./run_sim.sh` 可以仅打开加载控制器到MuJoCo中开始仿真。
+5. 编辑 `nabo_mujoco/000.ini` 中的内容以调整参数，这样可以避免修改参数后重新去编译nabo_core。`nabo_mujoco/zzz.txt` 负责储存仿真过程中的log文件，当启动log选项时会记录log在此处。
+6. 目前在接近零速度时pitch的控制不佳，会稳定在一个bias处。暂时不能实现稳定的偏航角控制。
 
 > 在MuJoCo交互界面中：
 >
